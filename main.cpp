@@ -1,10 +1,24 @@
 #include <iostream>
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 int main() {
-  std::cout << "asdfasdf";
+  std::cout << "Enter your first name: ";
+  std::string fName = "";
+  std::cin >> fName;
+
+  std::cout << "Enter your last name: ";
+  std::string lName = "";
+  std::cin >> lName;
+
+  std::cout << "Enter your age: ";
+  int age = 0;
+  std::cin >> age;
+
+  if ( age >= 21 ) {
+    std::cout << fName << " " << lName << " was granted access to the store" << std::endl;
+  } else {
+    std::cout << fName << " " << lName << " was not granted access to the store" << std::endl;
+  }
 
 
   return 0;
-  // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
 }
