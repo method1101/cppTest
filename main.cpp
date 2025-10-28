@@ -13,12 +13,9 @@ int main() {
   int age = 0;
   std::cin >> age;
 
-  if ( age >= 21 ) {
-    std::cout << fName << " " << lName << " was granted access to the store" << std::endl;
-  } else {
-    std::cout << fName << " " << lName << " was not granted access to the store" << std::endl;
-  }
-
+  std::string greeting = "";
+  greeting = "Drear " + fName + " " + lName + ", " + "you are " + std::to_string(age) + " years old ;).";
+  std::cout << greeting << std::endl;
 
   return 0;
 }
